@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone Montana | Компютърен Сервиз & Аксесоари</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1a1a1a;
+            --neon-green: #39FF14;
+            --text-white: #ffffff;
+            --text-gray: #aaaaaa;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-white); line-height: 1.6; }
+        .container { width: 85%; max-width: 1200px; margin: 0 auto; }
+
+        /* НАВИГАЦИЯ */
+        header { border-bottom: 1px solid #222; padding: 20px 0; position: sticky; top: 0; background-color: rgba(18, 18, 18, 0.95); z-index: 100; backdrop-filter: blur(5px); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; }
+        .nav-links a { color: var(--text-white); text-decoration: none; margin-left: 20px; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: var(--neon-green); }
+
+        /* HERO СЕКЦИЯ С ЛОГО */
+        .hero { padding: 80px 0; text-align: center; background: linear-gradient(180deg, rgba(57, 255, 20, 0.05) 0%, rgba(12, 12, 12, 0) 100%); }
+        .hero-logo { max-width: 400px; height: auto; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(57, 255, 20, 0.3)); }
+        .hero h1 { font-size: 48px; font-weight: 800; margin-bottom: 15px; }
+        .hero p { font-size: 18px; color: var(--text-gray); max-width: 600px; margin: 0 auto 30px auto; }
+        
+        .btn-cta { background-color: var(--neon-green); color: #000; padding: 15px 35px; font-size: 18px; font-weight: 700; text-decoration: none; border-radius: 5px; box-shadow: 0 0 15px rgba(57, 255, 20, 0.4); transition: 0.3s; display: inline-block; }
+        .btn-cta:hover { box-shadow: 0 0 25px var(--neon-green); transform: translateY(-2px); }
+
+        /* УСЛУГИ */
+        .services { padding: 80px 0; }
+        .section-title { text-align: center; font-size: 32px; margin-bottom: 50px; }
+        .section-title::after { content: ''; display: block; width: 60px; height: 3px; background-color: var(--neon-green); margin: 10px auto 0 auto; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .service-card { background-color: var(--card-bg); padding: 40px 30px; border-radius: 8px; border: 1px solid #222; transition: 0.3s; }
+        .service-card:hover { border-color: var(--neon-green); transform: translateY(-5px); }
+        .service-icon { font-size: 40px; margin-bottom: 20px; }
+
+        /* ИНФО */
+        .info-section { background-color: var(--card-bg); padding: 60px 0; border-top: 1px solid #222; border-bottom: 1px solid #222; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+        .info-box h3 { color: var(--neon-green); margin-bottom: 20px; font-size: 20px; }
+        .info-box p { margin-bottom: 10px; color: #ddd; }
+        footer { padding: 40px 0; text-align: center; color: var(--text-gray); font-size: 14px; }
+    </style>
+</head>
+<body>
+
+  <header>
+        <div class="container nav-container">
+            <!-- Добавен е линк <a> около изображението image_87921c.png -->
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="TechZone Montana" style="height: 70px; width: auto; display: block;">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="#services">Услуги</a>
+                <a href="#contacts">Контакти</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="logo.png" alt="TechZone Montana Logo" class="hero-logo">
+            <h1>Професионален компютърен сервиз</h1>
+            <p>Експресна диагностика, ремонт на лаптопи и компютри, почистване и най-яките гейминг аксесоари в град Монтана.</p>
+            <a href="tel:0877022288" class="btn-cta">Обади се: 0877 022 288</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Какво предлагаме</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Ремонт на компютри & лаптопи</h3>
+                    <p>Смяна на части, бързо откриване на проблеми, хардуерни ремонти и ъпгрейди за по-висока скорост.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Пълна Профилактика</h3>
+                    <p>Почистване от прах и подмяна на термопаста. Предотврати прегряването и защити машината си навреме.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎧</div>
+                    <h3>Гейминг Периферия</h3>
+                    <p>Яки слушалки, клавиатури, мишки и аксесоари за твоя перфектен гейминг стъп.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section" id="contacts">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>🕒 Работно Време</h3>
+                    <p><strong>Пон. - Пет.:</strong> 09:00 - 18:00 ч.</p>
+                    <p><strong>Събота:</strong> 10:00 - 15:00 ч.</p>
+                </div>
+                <div class="info-box">
+                    <h3>📍 Локация</h3>
+                    <p>гр. Монтана, Широк център</p>
+                    <p>Техник: <strong>Михаил Георгиев</strong></p>
+                </div>
+                <div class="info-box">
+                    <h3>📱 Социални мрежи</h3>
+                    <p><strong>TikTok & IG:</strong> @TechZoneMontana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 TechZone Montana. Всички права запазени.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
